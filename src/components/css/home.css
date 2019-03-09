@@ -1,0 +1,66 @@
+ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.col-2, .col-3, .col-4, .col-6, .col-12 {
+  float: left;
+  padding-left: 1.04166666%;
+  padding-right: 1.04166666%;
+}
+
+@media only screen and (min-width: 640px) {
+  .col-2 {
+    width: 16.66%;
+  }
+  .col-3 {
+    width: 25%;
+  }
+
+  .col-4 {
+    width: 33.33%;
+  }
+
+  .col-6 {
+    width: 50%;
+  }
+
+  .col-12 {
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 639px) {
+  label.plot-name-label, input#plot-name {
+    display: block;
+  }
+  input#plot-name {
+    min-width: 100%;
+    float: left;
+  }
+  label.veggie-label input#veggie-name {
+    display: block;
+  }
+}
+
+.modal {
+    display: block;
+    position: fixed;
+    z-index: 3;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
